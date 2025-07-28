@@ -6,7 +6,7 @@ interface TaskProps {
 
 export default function Task({ stepNumber, title, isLast }: TaskProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       {/* Main row with circle and title */}
       <div className="flex items-center">
         {/* Circle with number */}
@@ -18,9 +18,7 @@ export default function Task({ stepNumber, title, isLast }: TaskProps) {
         </div>
 
         {/* Task title */}
-        <span className="ml-6 text-lg font-medium" style={{ color: "#EEEEEE" }}>
-          - {title}
-        </span>
+        <span className="ml-6 text-lg font-medium">- {title}</span>
       </div>
 
       {/* Vertical connecting line to next task */}
