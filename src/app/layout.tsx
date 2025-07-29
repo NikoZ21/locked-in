@@ -1,15 +1,11 @@
-import "./globals.css";
+import { Provider } from "@/components/ui/provider";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout(props: { children: React.ReactNode }) {
+  const { children } = props;
   return (
-    <html lang="en">
+    <html suppressHydrationWarning>
       <body>
-        <h1>Locked-In</h1>
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
