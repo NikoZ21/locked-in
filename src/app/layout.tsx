@@ -1,12 +1,11 @@
-import { Provider } from "@/components/ui/provider";
-
-export default function RootLayout(props: { children: React.ReactNode }) {
-  const { children } = props;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html suppressHydrationWarning>
-      <body>
-        <Provider>{children}</Provider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
