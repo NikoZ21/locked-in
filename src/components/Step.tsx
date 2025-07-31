@@ -6,7 +6,7 @@ interface StepProps {
 
 export default function Step({
   number,
-  bgColor = "bg-red-500",
+  bgColor = "bg-custom-primary",
   isLast = false,
 }: StepProps) {
   return (

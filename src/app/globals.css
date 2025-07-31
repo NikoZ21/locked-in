@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -10,11 +10,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom colors from design.json */
+  --color-custom-background: #000000;
+  --color-custom-card-background: #071918;
+  --color-custom-primary: #154c48;
+  --color-custom-secondary: #237f79;
+  --color-custom-accent: #32b2a9;
+  --color-custom-input-border: #32b2a9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }

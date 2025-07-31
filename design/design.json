@@ -1,0 +1,14 @@
+{
+  "colors": {
+    "background": "#000000",
+    "cardBackground": "#071918",
+    "primary": "#154C48",
+    "secondary": "#237F79",
+    "accent": "#32B2A9",
+    "inputBorder": "#32B2A9"
+  },
+  "fonts": {
+    "primary": "Arial, sans-serif",
+    "secondary": "Helvetica, sans-serif"
+  }
+}
